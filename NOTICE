@@ -1,0 +1,13 @@
+StrandedCPU
+
+Includes code derived from LOOM by Mehmet Kerem Turkcan and its contributors.
+Upstream: https://github.com/mkturkcan/Loom
+Baseline: 71483281622684f32ea81c721b5a96c29cff4766
+Paper: Loom: A Scalable Analytical Neural Computer Architecture
+https://arxiv.org/abs/2604.08816
+
+StrandedCPU modifies the ISA, arithmetic, compiler, and attention implementation.
+It adds checked C/Python execution, exact fractions, CPU and CUDA ISA backends,
+answer scoring, model helpers, and native iCEstick RTL and host interfaces.
+
+The Apache License, Version 2.0 is retained in LICENSE.

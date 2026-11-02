@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strandedcpu"
+version = "0.1.0"
+description = "Compile and check small Python and C programs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = ["numpy", "torch"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/zxexz/strandedcpu"
+Documentation = "https://github.com/zxexz/strandedcpu/tree/main/docs"
+
+[tool.setuptools]
+packages = ["strandedcpu"]
+
+[tool.setuptools.package-data]
+strandedcpu = ["kernel.fatbin", "kernel.fatbin.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = ["--import-mode=importlib"]

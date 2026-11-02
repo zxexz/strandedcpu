@@ -1,0 +1,15 @@
+{
+ "source_sha256": "a48355823dfc87cc68e50ebc48cdf2d48ebafe07baf316d6ae9d6dadd377f316",
+ "archs": [
+  "sm_75",
+  "sm_80",
+  "sm_86",
+  "sm_89",
+  "sm_90",
+  "sm_100",
+  "sm_120"
+ ],
+ "ptx": "compute_75",
+ "nvcc": "Build cuda_13.0.r13.0/compiler.36424714_0",
+ "bytes": 546288
+}
